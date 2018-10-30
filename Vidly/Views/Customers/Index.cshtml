@@ -1,4 +1,4 @@
-﻿@model Vidly.ViewModels.CustomerIndexViewModel
+﻿@model List<Vidly.Models.Customer>
 @{
                 /**/
 
@@ -8,7 +8,7 @@
 
 <h2>Customers</h2>
 
-@if (Model.Customers.Count() == 0)
+@if (!Model.Any())
 {
     <p>We don't have any customers yet.</p>
 }
@@ -17,14 +17,20 @@ else
     <table class="table">
         <thead>
             <tr>
+                <th scope="col">#</th>
                 <th scope="col">Customer</th>
+                <th scope="col">Discount Rate</th>
             </tr>
         </thead>
         <tbody>
 
-            @foreach (var customer in Model.Customers)
+            @foreach (var customer in Model)
             {
-                <tr><td><a href="/Customers/Details/@customer.Id"><u>@customer.Name</u></a></td></tr>
+             <tr>
+                <td>@customer.Id</td>
+                <td><u>@Html.ActionLink(customer.Name, "Details", "Customers", new { @customer.Name })</u></td>
+                 <td>@customer.MembershipType.Name</td>
+             </tr>
             }
         </tbody>
     </table>

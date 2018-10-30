@@ -222,6 +222,14 @@
     <Compile Include="Migrations\201810301103347_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201810301103347_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810301431553_AddMembershipTypeName.cs" />
+    <Compile Include="Migrations\201810301431553_AddMembershipTypeName.Designer.cs">
+      <DependentUpon>201810301431553_AddMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810301434181_PopulateMembershipName.cs" />
+    <Compile Include="Migrations\201810301434181_PopulateMembershipName.Designer.cs">
+      <DependentUpon>201810301434181_PopulateMembershipName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -231,8 +239,6 @@
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="ViewModels\MovieIndexViewModel.cs" />
-    <Compile Include="ViewModels\CustomerIndexViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-lumen.css" />
@@ -302,6 +308,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -331,6 +338,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810301103347_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201810301103347_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810301431553_AddMembershipTypeName.resx">
+      <DependentUpon>201810301431553_AddMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810301434181_PopulateMembershipName.resx">
+      <DependentUpon>201810301434181_PopulateMembershipName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
