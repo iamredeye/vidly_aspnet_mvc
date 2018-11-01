@@ -276,3 +276,8 @@ D:\Visual_Studio_Projects\Vidly\vidly_aspnet_mvc\Vidly\obj\Debug\Vidly.dll
 D:\Visual_Studio_Projects\Vidly\vidly_aspnet_mvc\Vidly\obj\Debug\Vidly.pdb
 D:\Visual_Studio_Projects\Vidly\vidly_aspnet_mvc\Vidly\obj\Debug\Vidly.Migrations.AddMembershipTypeName.resources
 D:\Visual_Studio_Projects\Vidly\vidly_aspnet_mvc\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipName.resources
+D:\Visual_Studio_Projects\Vidly\vidly_aspnet_mvc\Vidly\obj\Debug\Vidly.Migrations.AddCustomerBirthdate.resources
+D:\Visual_Studio_Projects\Vidly\vidly_aspnet_mvc\Vidly\obj\Debug\Vidly.Migrations.CustomerBirthdateNullable.resources
+D:\Visual_Studio_Projects\Vidly\vidly_aspnet_mvc\Vidly\obj\Debug\Vidly.Migrations.AddGenreMovie.resources
+D:\Visual_Studio_Projects\Vidly\vidly_aspnet_mvc\Vidly\obj\Debug\Vidly.Migrations.PopulateGenres.resources
+D:\Visual_Studio_Projects\Vidly\vidly_aspnet_mvc\Vidly\obj\Debug\Vidly.Migrations.FixDatabase.resources
