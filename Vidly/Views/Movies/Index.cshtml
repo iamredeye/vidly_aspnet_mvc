@@ -1,13 +1,13 @@
 ﻿@model List<Vidly.Models.Movie>
 @{
-                /**/
+    /**/
 
-                ViewBag.Title = "Movies";
-                Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Movies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Movies</h2>
-
+@Html.ActionLink("New Movie", "New", "Movies", null, new { @class = "btn btn-primary" })
 @if (!Model.Any())
 {
     <p>We don't have any movies yet.</p>
@@ -26,11 +26,11 @@ else
 
             @foreach (var movie in Model)
             {
-            <tr>
-                <td>@movie.Id</td>
-                <td><u>@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</u></td>
-                <td>@movie.Genre.Name</td>
-            </tr>
+                <tr>
+                    <td>@movie.Id</td>
+                    <td><u>@Html.ActionLink(movie.Name, "Edit", "Movies", new { id = movie.Id }, null)</u></td>
+                    <td>@movie.Genre.Name</td>
+                </tr>
             }
         </tbody>
     </table>
